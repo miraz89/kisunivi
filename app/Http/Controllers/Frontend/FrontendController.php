@@ -19,6 +19,7 @@ class FrontendController extends Controller
         $data['slider'] = Slider::orderBy('position')->first();
         $data['testimonials'] = Testimonial::where('status',User::USER_ACTIVE)->get();
 
+        dd($data);
 
         $data['settings'] = Settings::where('id',1)->first();
         return view('frontend.index',$data);
