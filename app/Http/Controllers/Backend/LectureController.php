@@ -8,6 +8,7 @@ use App\Models\Slider;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 
 class LectureController extends Controller
@@ -124,7 +125,7 @@ class LectureController extends Controller
      * @param  \App\Models\Lecture  $lecture
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Lecture $lecture)
+    public function update(Request $request, $id)
     {
         if (!Auth::user()->can('lecture.update')){
             abort(403,'Unauthorized Action');
@@ -164,7 +165,10 @@ class LectureController extends Controller
             $data['video'] = $path . '/' . $file_name;
         }
 //        dd($data);
-        $lecture->update($data);
+        DB::table('lectures')
+            ->where('id', $id)
+            ->update($data);
+//        $lecture->update($data);
         session()->flash('success', 'Successfully Session Updated');
         return redirect()->route('session.index');
     }

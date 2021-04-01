@@ -44,7 +44,8 @@ class ClientPartnerController extends Controller
             'title' => ['required'],
             'position' => ['required', 'numeric', 'digits_between:1,2'],
             'status' => ['required', Rule::in(User::STATUS_ACTIVE, User::STATUS_INACTIVE)],
-            'photo' => ['required', 'mimes:jpg,jpeg,png,gif','max:512','dimensions:width=635,height=960']
+            'photo' => ['required']
+//            'photo' => ['required', 'mimes:jpg,jpeg,png,gif','max:512','dimensions:width=635,height=960']
 
         ],[
             'photo.dimensions' => 'Width and Height Must be :width px X :height px',
@@ -106,7 +107,8 @@ class ClientPartnerController extends Controller
             'title' => ['required'],
             'position' => ['required', 'numeric', 'digits_between:1,2'],
             'status' => ['required', Rule::in(User::STATUS_ACTIVE, User::STATUS_INACTIVE)],
-            'photo' => ['nullable','mimes:jpg,jpeg,png,gif','max:512','dimensions:width=635,height=960']
+            'photo' => ['nullable'],
+//            'photo' => ['nullable','mimes:jpg,jpeg,png,gif','max:512','dimensions:width=635,height=960']
         ],[
             'photo.dimensions' => 'Width and Height Must be :width px X :height px',
         ]);

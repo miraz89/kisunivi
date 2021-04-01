@@ -18,11 +18,11 @@
 
     <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
         <h2 class="text-lg font-medium mr-auto">
-            Datatable
+            Testimonial
         </h2>
         <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
             @canany(['testimonial.create'])
-                <a class="button text-white bg-theme-1 shadow-md mr-2" href="{{ route('testimonial.create') }}">Add New User</a>
+                <a class="button text-white bg-theme-1 shadow-md mr-2" href="{{ route('testimonial.create') }}">Add New Testimonial</a>
                 @endcanany
         </div>
     </div>

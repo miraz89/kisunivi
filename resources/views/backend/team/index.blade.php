@@ -22,7 +22,7 @@
         </h2>
         <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
 {{--            @canany(['team.create'])--}}
-                <a class="button text-white bg-theme-1 shadow-md mr-2" href="{{ route('team.create') }}">Add New User</a>
+                <a class="button text-white bg-theme-1 shadow-md mr-2" href="{{ route('team.create') }}">Add Team Member</a>
 {{--                @endcanany--}}
         </div>
     </div>

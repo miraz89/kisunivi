@@ -59,7 +59,7 @@
                          @endphp
                      </div>
                  </td>
-                <td class="text-center border-b">{{ $event->description }}</td>
+                <td class="text-center border-b">{!! $event->description !!}</td>
                 <td class="w-40 border-b">
                     @if($event->status == 'Active')
                         <div class="flex items-center sm:justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>

@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5">
-                <button type="submit" class="button w-50 justify-center block bg-theme-1 text-white ml-2">Add Category</button>
+                <button type="submit" class="button w-50 justify-center block bg-theme-1 text-white ml-2">Add Post</button>
                 <br><br>
             </div>
         </div>

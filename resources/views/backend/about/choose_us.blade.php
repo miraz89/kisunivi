@@ -32,7 +32,7 @@
                     <div class="mt-3">
                         <label class="flex flex-col sm:flex-row"> Description <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-gray-600">Required, at least 10 characters</span> </label>
 {{--                        <textarea class="input w-full border mt-3" name="description" placeholder="Type your details" minlength="10" required>{{ old('description',isset($about->description)?$about->description:null) }}</textarea>--}}
-                        <textarea name="description" data-feature="all" class="summernote" required>{!! old('description',isset($about->description)?$about->description:null) !!}</textarea>
+                        <textarea name="description" data-feature="all" class="summernote" required> {!! old('description',isset($about->description)?$about->description:null) !!}</textarea>
                     </div>
                     @error('description')
                     <div class="text-danger mb-3">{{ $message }}</div>

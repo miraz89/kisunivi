@@ -53,7 +53,18 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::put('choose_us/{id}','App\Http\Controllers\Backend\AboutController@updateChoose_us')->name('choose_us.update');
 });
 
-Route::get('/',[\App\Http\Controllers\Frontend\FrontendController::class,'index']);
+Route::get('/',[\App\Http\Controllers\Frontend\FrontendController::class,'index'])->name('frontend.home');
+
+Route::get('blog','\App\Http\Controllers\Frontend\FrontendController@blog')->name('blog.all');
+Route::get('blog/{id}','\App\Http\Controllers\Frontend\FrontendController@singleblog')->name('blog.details');
+
+Route::get('resent-news','\App\Http\Controllers\Frontend\FrontendController@news')->name('news.all');
+Route::get('resent-news/{id}','\App\Http\Controllers\Frontend\FrontendController@singlenews')->name('news.details');
+
+Route::get('text-session','\App\Http\Controllers\Frontend\FrontendController@textsession')->name('session.text');
+
+Route::get('about-us-bangla','\App\Http\Controllers\Frontend\FrontendController@bangla')->name('about.bangla');
+Route::get('about-us-english','\App\Http\Controllers\Frontend\FrontendController@english')->name('about.english');
 //Route::get('registration','Laravel\Fortify\Http\Controllers\Backend\UserRegistrationController@create');
 //Route::get('registration',[\App\Http\Controllers\Backend\UserRegistrationController::class,'index']);
 //Route::post('registration',[\App\Http\Controllers\Backend\UserRegistrationController::class,'store']);

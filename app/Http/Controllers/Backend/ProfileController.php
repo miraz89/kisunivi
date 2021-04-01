@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
+use function PHPUnit\Framework\isNull;
 
 class ProfileController extends Controller
 {
@@ -30,7 +31,11 @@ class ProfileController extends Controller
             $data['profile'] = User::where('id', auth()->user()->id)
 //                ->where('status', User::STATUS_ACTIVE)
                 ->first();
-//        dd($data);
+       // dd($data);
+//        if (isNull($data['profile'])){
+//            return redirect()->route('frontend.home');
+//        }
+       // dd($data);
 
             return view('backend.profile.index', $data);
 //        }

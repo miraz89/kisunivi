@@ -2,7 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e4d396d-8851-45fd-8165-ca35d3b76f30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/about-english.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single-news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single-post.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/text-session.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ClientPartnerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ClientPartnerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/LectureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/LectureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/NewsCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/NewsCategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/TeamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/TestimonialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/TestimonialController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_13_124927_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_13_124927_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_27_172506_create_lectures_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_27_172506_create_lectures_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/about/choose_us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/about/choose_us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/event/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/event/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/member/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/member/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/news/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/news/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/news/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/post/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/post/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/post/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/post/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/team/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/team/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/testimonial/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/testimonial/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/_footerNav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/_footerNav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/_topBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/_topBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/_topNav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/_topNav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +244,7 @@
       <workItem from="1616326318229" duration="36876000" />
       <workItem from="1616589895813" duration="16529000" />
       <workItem from="1616638544549" duration="37939000" />
-      <workItem from="1616950197930" duration="37507000" />
+      <workItem from="1616950197930" duration="75227000" />
     </task>
     <servers />
   </component>
@@ -211,10 +252,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-971" y="35" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617031817284">
+    <state x="-971" y="35" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617249311992">
       <screen x="-1366" y="-148" width="1366" height="728" />
     </state>
-    <state x="-971" y="35" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617031817284" />
+    <state x="-971" y="35" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617249311992" />
     <state x="370" y="247" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984/-1366.-148.1366.728@0.0.1280.984" timestamp="1614354529260" />
     <state x="-903" y="-29" key="FileChooserDialogImpl" timestamp="1615640254488">
       <screen x="-1366" y="-148" width="1366" height="728" />
@@ -240,19 +281,19 @@
       <screen x="-1366" y="-148" width="1366" height="728" />
     </state>
     <state x="-933" y="30" key="NewPhpClassDialog/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617085861877" />
-    <state x="-789" y="340" key="NewPhpFileDialog" timestamp="1617091610972">
+    <state x="-789" y="340" key="NewPhpFileDialog" timestamp="1617219523281">
       <screen x="-1366" y="-148" width="1366" height="728" />
     </state>
-    <state x="-789" y="340" key="NewPhpFileDialog/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617091610972" />
+    <state x="-789" y="340" key="NewPhpFileDialog/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617219523281" />
     <state x="541" y="659" key="NewPhpFileDialog/0.0.1280.984/-1366.-148.1366.728@0.0.1280.984" timestamp="1614354067049" />
     <state x="-988" y="40" key="com.intellij.ide.util.TipDialog" timestamp="1616950201516">
       <screen x="-1366" y="-148" width="1366" height="728" />
     </state>
     <state x="-988" y="40" key="com.intellij.ide.util.TipDialog/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1616950201516" />
-    <state x="-1020" y="-99" width="672" height="678" key="search.everywhere.popup" timestamp="1617109452652">
+    <state x="-1020" y="-99" width="672" height="678" key="search.everywhere.popup" timestamp="1617271764094">
       <screen x="-1366" y="-148" width="1366" height="728" />
     </state>
-    <state x="-1020" y="-99" width="672" height="678" key="search.everywhere.popup/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617109452652" />
+    <state x="-1020" y="-99" width="672" height="678" key="search.everywhere.popup/0.0.1280.984/-1366.-148.1366.728@-1366.-148.1366.728" timestamp="1617271764094" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -271,6 +312,21 @@
           <url>file://$PROJECT_DIR$/resources/views/frontend/layouts/_sideTopNav.blade.php</url>
           <line>1</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/frontend/index.blade.php</url>
+          <line>431</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/frontend/news.blade.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/frontend/text-session.blade.php</url>
+          <line>25</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

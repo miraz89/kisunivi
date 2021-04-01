@@ -210,6 +210,9 @@
                         <div class="dz-message" data-dz-message>
                             <div class="text-lg font-medium">Profile Picture.</div>
                         </div>
+                        @error('profile_photo_path')
+                        <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
+                        @enderror
                         <img src="{{ asset($member->profile_photo_path) }}" width="200px" height="200px">
                     </div>
 

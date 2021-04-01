@@ -23,12 +23,12 @@
                 <h3 class="wow fadeInUp">Quick Links</h3>
 
                 <ul class="list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="{{ route('frontend.home') }}">Home</a></li>
+                    <li><a href="{{ route('about.bangla') }}">About</a></li>
+                    <li><a href="{{ route('blog.all') }}">Blog</a></li>
+                    <li><a href="{{ route('news.all') }}">News</a></li>
+                    <li><a href="{{ route('session.text') }}">Session</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ's</a></li>
                 </ul>
             </div>
         </div>
@@ -38,23 +38,13 @@
                 <h3 class="wow fadeInUp">Recent Post</h3>
 
                 <ul class="footer-recent-post">
+                    @foreach($posts as $post)
                     <li>
-                        <a href="#">The Most Popular New Business Apps</a>
+                        <a href="{{ route('blog.details',$post->id) }}">{{ $post->title }}</a>
 
-                        <span>25 Feb, 2019</span>
+                        <span>{{ date('d M Y',strtotime($post->date)) }}</span>
                     </li>
-
-                    <li>
-                        <a href="#">The Best Marketing Management Tools</a>
-
-                        <span>27 Feb, 2019</span>
-                    </li>
-
-                    <li>
-                        <a href="#">3 WooCommerce Plugins to Boost Sales</a>
-
-                        <span>28 Feb, 2019</span>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>

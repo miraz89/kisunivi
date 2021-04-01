@@ -17,8 +17,8 @@ class CreateLecturesTable extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->longText('description')->nullable();
-            $table->longText('position')->nullable();
-            $table->longText('status')->nullable();
+            $table->string('position')->nullable();
+            $table->string('status')->nullable();
             $table->string('photo')->nullable();
             $table->string('video')->nullable();
             $table->timestamps();

@@ -55,7 +55,8 @@ class NewsCategoryController extends Controller
             'status' => ['required']
         ]);
         $data['title'] = $request->title;
-        $data['slug'] = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $data['title']) ));
+        $data['slug'] = $request->title;
+//        $data['slug'] = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $data['title']) ));
         $data['status'] = $request->status;
 
         NewsCategory::create($data);
@@ -110,7 +111,8 @@ class NewsCategoryController extends Controller
             'title' => ['required']
         ]);
         $data['title'] = $request->title;
-        $data['slug'] = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $data['title']) ));
+        $data['slug'] = $request->title;
+//        $data['slug'] = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $data['title']) ));
         $data['status'] = $request->status;
 
         $newsCategory->update($data);

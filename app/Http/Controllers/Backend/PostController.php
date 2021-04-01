@@ -35,7 +35,7 @@ class PostController extends Controller
         if (!Auth::user()->can('post.create')){
             abort(403,'Unauthorized Action');
         }
-        $data['categories'] = Category::all();
+        $data['categories'] = Category::where('status', User::USER_ACTIVE)->get();
         return view('backend.post.create',$data);
     }
 
@@ -53,19 +53,22 @@ class PostController extends Controller
 //      dd($request->all());
         $request->validate([
             'category_id' => ['required'],
-            'title' => ['required'],
+//            'user_id' => ['required'],
+            'title' => ['required', 'min:3', 'max:50'],
 //            'title' => ['required', 'regex:/^[a-zA-Z\s]+$/', 'min:3', 'max:50'],
             'description' => ['required'],
             'date' => ['required'],
-            'photo' => ['required']
-//            'photo' => ['nullable', 'mimes:jpg,jpeg,png,gif','max:512','dimensions:width=635,height=960']
+//            'photo' => ['required'],
+            'photo' => ['required', 'mimes:jpg,jpeg,png,gif','max:512','dimensions:width=960,height=540']
         ],[
             'photo.dimensions' => 'Width and Height Must be :width px X :height px',
         ]);
 //        dd($request->all());
         $data['category_id'] = $request->category_id;
+//        $data['user_id'] = Auth::user()->id;
         $data['title'] = $request->title;
-        $data['slug'] = strtolower(trim( $data['title']));
+//        $data['slug'] = strtolower(trim( $data['title']));
+        $data['slug'] = $data['title'];
         $data['description'] = $request->description;
         $data['date'] = date('Y-m-d', strtotime($request->date));
 
@@ -119,6 +122,8 @@ class PostController extends Controller
 
         $data['post'] = Post::findOrFail($id);
         $data['categories'] = Category::all();
+
+       // dd($data);
         return view('backend.post.edit',$data);
     }
 
@@ -137,22 +142,26 @@ class PostController extends Controller
 //        dd($request->all());
         $request->validate([
             'category_id' => ['required'],
+            'user_id' => ['required'],
             'title' => ['required'],
 //            'title' => ['required', 'regex:/^[a-zA-Z\s]+$/', 'min:3', 'max:50'],
             'description' => ['required'],
             'date' => ['required'],
-//            'photo' => ['nullable', 'mimes:jpg,jpeg,png,gif','max:512','dimensions:width=635,height=960']
+            'photo' => ['nullable', 'mimes:jpg,jpeg,png,gif','max:512','dimensions:width=960,height=540']
         ],[
             'photo.dimensions' => 'Width and Height Must be :width px X :height px',
         ]);
 
 //        dd($request->all());
         $data['category_id'] = $request->category_id;
+//        $data['user_id'] = Auth::user()->id;
         $data['title'] = $request->title;
-        $data['slug'] = strtolower(trim( $data['title'] ));
+//        $data['slug'] = strtolower(trim( $data['title'] ));
+        $data['slug'] =  $data['title'] ;
         $data['description'] = $request->description;
         $data['date'] = date('Y-m-d', strtotime($request->date));
 
+        //dd($data['date']);
         if (!empty($request->status)){
             $data['status'] = User::STATUS_ACTIVE;
         }

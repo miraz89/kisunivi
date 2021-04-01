@@ -44,69 +44,69 @@
                 <div class="intro-x mt-2 text-gray-500 xl:hidden text-center">A few more clicks to sign in to your account. Manage all your e-commerce accounts in one place</div>
                 <div class="intro-x mt-8">
                 <form method="POST" action="{{ route('registration') }}">
-                    <div class="intro-y box mt-5">
+{{--                    <div class="intro-y box mt-5">--}}
 
-                        <div class="p-5" id="input-groups">
-                            <div class="preview">
-                                <div class="relative">
-                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="user"></i></div>
-                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Name">
-                                </div>
+{{--                        <div class="p-5" id="input-groups">--}}
+{{--                            <div class="preview">--}}
+{{--                                <div class="relative">--}}
+{{--                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="user"></i></div>--}}
+{{--                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Name">--}}
+{{--                                </div>--}}
 
-                                  <div class="relative mt-2">
-                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="mail"></i></div>
-                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Email">
-                                </div>
+{{--                                  <div class="relative mt-2">--}}
+{{--                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="mail"></i></div>--}}
+{{--                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Email">--}}
+{{--                                </div>--}}
 
-                                  <div class="relative mt-2">
-                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="mail"></i></div>
-                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Email">
-                                </div>
+{{--                                  <div class="relative mt-2">--}}
+{{--                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="mail"></i></div>--}}
+{{--                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Email">--}}
+{{--                                </div>--}}
 
-                                  <div class="relative mt-2">
-                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="mail"></i></div>
-                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Email">
-                                </div>
+{{--                                  <div class="relative mt-2">--}}
+{{--                                    <div class="absolute rounded-l w-10 h-full flex items-center justify-center bg-gray-100 border text-gray-600"><i data-feather="mail"></i></div>--}}
+{{--                                    <input type="text" class="input pl-12 w-full border col-span-4" placeholder="Email">--}}
+{{--                                </div>--}}
 
 
-                            </div>
-                        </div>
-                    </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     @csrf
 
 
                     <input type="text" name="name" value="{{ old('name') }}" class="intro-x login__input input input--lg border border-gray-300 block" placeholder="Full Name">
                     @error('name')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="email" name="email" value="{{ old('email') }}" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Email">
                     @error('name')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="text" name="batch_name" value="{{ old('batch_name') }}" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Batch No">
                     @error('batch_name')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="text" name="country" value="{{ old('country') }}" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Country">
                     @error('country')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="text" name="nationality" value="{{ old('nationality') }}" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Nationality">
                     @error('nationality')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="text" name="phone" value="{{ old('phone') }}" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Phone Number">
                     @error('phone')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="text" name="occupation" value="{{ old('occupation') }}" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Occupation">
                     @error('occupation')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="password" name="password" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Password">
                     @error('password')
-                    <div class="text-danger mb-3">{{ $message }}</div>
+                    <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                     @enderror
                     <input type="password" name="password_confirmation" class="intro-x login__input input input--lg border border-gray-300 block mt-4" placeholder="Password Confirmation">
 

@@ -25,15 +25,16 @@
                     <input type="text" name="title" value="{{ old('title') }}"class="input w-full border mt-2" placeholder="Name" required>
                 </div>
                 @error('title')
-                <div class="text-danger mb-3">{{ $message }}</div>
+                <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                 @enderror
 
                 <div>
                     <label>Description</label>
-                    <input type="text" name="description" value="{{ old('description') }}"class="input w-full border mt-2" placeholder="Designation" required>
+{{--                    <input type="text" name="description" value="{{ old('description') }}"class="input w-full border mt-2" placeholder="Designation" required>--}}
+                    <textarea name="description" data-feature="all" class="summernote" required>{{ old('description') }}</textarea>
                 </div>
                 @error('description')
-                <div class="text-danger mb-3">{{ $message }}</div>
+                <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                 @enderror
 
                 <div>
@@ -41,7 +42,7 @@
                     <input type="number" name="position" value="{{ old('position') }}"class="input w-full border mt-2" placeholder="Testimonial Position" required>
                 </div>
                 @error('position')
-                <div class="text-danger mb-3">{{ $message }}</div>
+                <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
                 @enderror
 
                 <div>
@@ -66,6 +67,9 @@
                         <div class="text-lg font-medium">Drop files here or click to upload.</div>
                     </div>
                 </div>
+                @error('status')
+                <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>
+                @enderror
 
                 <button type="submit" class="button bg-theme-1 text-white mt-5">Add</button>
             </div>

@@ -30,8 +30,9 @@
                     @enderror
 
                     <div>
-                        <label>Photo Title</label>
-                        <input type="text" name="description" value="{{ old('description',isset($event->description)?$event->description:null) }}"class="input w-full border mt-2" required>
+                        <label>Description</label>
+{{--                        <input type="text" name="description" value="{{ old('description',isset($event->description)?$event->description:null) }}"class="input w-full border mt-2" required>--}}
+                        <textarea name="description" data-feature="all" class="summernote" required>{{ old('description',isset($event->description)?$event->description:null) }}</textarea>
                     </div>
                     @error('description')
                     <div class="text-danger mb-3">{{ $message }}</div>

@@ -69,7 +69,7 @@
                     <div class="mt-3">
                         <label>Post Date</label>
 {{--                        <input data-timepicker="true" name="date" class="datepicker input w-full border mt-2">--}}
-                        <input name="date" value="" class="datepicker input w-56 border block mx-auto">
+                        <input name="date" value="{{ $post->date }}" class="datepicker input w-56 border block mx-auto">
                     </div>
                     @error('date')
                     <div class="text-danger mb-3 text-theme-6">{{ $message }}</div>

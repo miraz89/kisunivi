@@ -65,7 +65,7 @@ class NewsController extends Controller
         $data['news_category_id'] = $request->news_category_id;
         $data['title'] = $request->title;
 //        $data['slug'] = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $data['title']) ));
-        $data['slug'] = strtolower(trim( $data['title'] ));
+        $data['slug'] = $request->title;
         $data['description'] = $request->description;
         $data['date'] = date('Y-m-d', strtotime($request->date));
 
@@ -142,7 +142,8 @@ class NewsController extends Controller
 //        dd($request->all());
         $data['news_category_id'] = $request->news_category_id;
         $data['title'] = $request->title;
-        $data['slug'] = strtolower(trim ($data['title'] ));
+//        $data['slug'] = strtolower(trim ($data['title'] ));
+        $data['slug'] = $data['slug'] = $request->title;
         $data['description'] = $request->description;
 
         $data['date'] = date('Y-m-d', strtotime($request->date));

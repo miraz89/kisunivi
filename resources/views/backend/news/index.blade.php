@@ -49,7 +49,7 @@
                             </div>
                         </div>
                     </td>
-                    <td class="text-center border-b">{!! $news->description !!}  </td>
+                    <td class="text-center border-b">{!! substr($news->description,0,50) !!}...  </td>
 
                     <td class="w-40 border-b">
                         @if($news->status == \App\Models\User::STATUS_ACTIVE)

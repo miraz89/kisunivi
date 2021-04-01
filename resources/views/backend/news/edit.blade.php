@@ -90,7 +90,7 @@
                     <div class="mt-3">
                         <label>Published</label>
                         <div class="mt-2">
-                            <input name="status"  @if(old('stutus', isset($post->status)?$post->status:null) == \App\Models\User::STATUS_ACTIVE) checked @endif class="input input--switch border" type="checkbox">
+                            <input name="status"  @if(old('stutus', isset($news->status)?$news->status:null) == \App\Models\User::STATUS_ACTIVE) checked @endif class="input input--switch border" type="checkbox">
                         </div>
                         @error('status')
                         <div class="text-danger mb-3">{{ $message }}</div>
